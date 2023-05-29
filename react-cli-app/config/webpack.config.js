@@ -366,7 +366,6 @@ module.exports = function (webpackEnv) {
                             options: {
                                 customize: require.resolve('babel-preset-react-app/webpack-overrides'),
                                 presets: [
-                                    'mobx',
                                     [
                                         require.resolve('babel-preset-react-app'),
                                         {
@@ -395,7 +394,7 @@ module.exports = function (webpackEnv) {
                                 babelrc: false,
                                 configFile: false,
                                 compact: false,
-                                presets: ['mobx', [require.resolve('babel-preset-react-app/dependencies'), { helpers: true }]],
+                                presets: [[require.resolve('babel-preset-react-app/dependencies'), { helpers: true }]],
                                 cacheDirectory: true,
                                 // See #6846 for context on why cacheCompression is disabled
                                 cacheCompression: false,

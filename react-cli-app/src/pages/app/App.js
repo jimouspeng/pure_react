@@ -3,6 +3,8 @@ import SchoolInfo from '../../components/school-info'
 import './App.css'
 import { SchoolContext } from '../../context'
 
+
+
 class App extends React.Component {
     render() {
         return (

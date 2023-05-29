@@ -13,6 +13,8 @@ import UserInput from '../user-input/index'
 import { SchoolContext } from '../../context/index'
 const UserInfo = React.lazy(() => import('../user-info/index'))
 const divRef = createRef('div')
+
+
 export default class SchoolInfo extends React.Component {
     // eslint-disable-next-line no-undef
     static contextType = SchoolContext
